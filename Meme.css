@@ -1,0 +1,74 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/* slider styles */
+body {
+	background-color: #272a2e;
+}
+.main{
+	display: flex;
+	margin: 0 300px;
+	overflow: hidden;
+	min-width: 900px;
+	height: 100vh;
+	background-color: #272a2e;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	background-color: #3b4046;
+   border-radius: 3%;
+}
+
+.slider__meme {
+	display: flex;
+}
+
+.slider__meme img{
+   border-radius: 55px;
+	padding: 30px 40px;
+	width: 900px;
+	height: 550px;
+}
+
+.slider__text{
+	padding: 0px 40px 40px;
+	font-size: 20px;
+	margin-top: 0;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.points {
+	display: flex;
+	column-gap: 10px;
+	position: absolute;
+	bottom: 50px;
+	right: 230px;
+}
+.dot {
+	cursor: pointer;
+	padding: 5px;
+	width: 17px;
+	height: 17px;
+	background-color: rgb(56, 56, 220);
+	border-radius: 50%;
+	transition: 0.3s;
+}
+.dot:hover{
+	border: 2px solid white;
+	background-color: white;
+}
+.dot__active{
+	border: 2px solid rgb(56, 56, 220);
+	background-color: #3b4046;
+}
